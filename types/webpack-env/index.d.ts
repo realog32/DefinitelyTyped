@@ -71,6 +71,10 @@ declare namespace __WebpackModuleApi {
         parent: NodeModule | null;
         children: NodeModule[];
         hot?: Hot;
+        /**
+         * The directory name of the module. This is usually the same as the path.dirname() of the module.id
+         */
+        path: string;
     }
     type ModuleId = string|number;
 
